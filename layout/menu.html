@@ -6,17 +6,15 @@
     <title>Brooklyn</title>
     <link rel="icon" type="image/png" href="../images/coffee.png"/>
     <link rel="stylesheet" href="../style/main.css" />
-    <!-- <script defer src="/bundle.js"></script> -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdO_NySsk6gdCF1Wmg0eHZV7Cjw_CwMnc" async defer></script> -->
   </head>
   <body class="inner-page">
     <header class="main-header">
        <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html"><img scr="../images/coffee.png"></a>
           <div class="main-navigation-wrapper">
               <div class="container">
                 <ul class="site-navigation">
-                    <li><a href="#">Menu</a></li>
+                    <li><a href="./index.html" class="logo"></a><img src="../images/coffee (2).png"></li>
+                    <li><a href="./menu.html">Menu</a></li>
                     <li><a href="#">Our Stores</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
@@ -37,54 +35,49 @@
             <section class="filters">
                 <form class="catalog-selector">
                     <fieldset class="selector-manufacturers">
-                        <legend>Производители</legend>
+                        <legend>Drinks</legend>
                         <label class="selector-marker">
                             <input type="checkbox" checked>
                             <span class="marker-indicator"></span>
-                        Baxter of California
+                        Iced Coffees
                         </label>
                         <label class="selector-marker">
                             <input type="checkbox">
                             <span class="marker-indicator"></span>
-                        Mr Natty
+                        Hot Coffees
                         </label>
                         <label class="selector-marker">
                             <input type="checkbox" checked>
                             <span class="marker-indicator"></span>
-                        Suavecito
+                        Hot Teas
                         </label>
                         <label class="selector-marker">
                             <input type="checkbox">
                             <span class="marker-indicator"></span>
-                        Malin+Goetz
+                        Iced Teas
                         </label>
                         <label class="selector-marker">
                             <input type="checkbox">
                             <span class="marker-indicator"></span>
-                        Murray's
-                        </label>
-                        <label class="selector-marker">
-                            <input type="checkbox" checked>
-                            <span class="marker-indicator"></span>
-                        American Crew
+                        Lemonades
                         </label>
                     </fieldset>
                     <fieldset class="selector-group">
-                        <legend>Группы товаров</legend>
+                        <legend>Coffee Types</legend>
                         <label class="selector-marker">
                             <input type="radio" name="item-group" value="shaving-materials">
                             <span class="marker-indicator"></span>
-                        Бритвенные принадлежности
+                        Americano
                         </label>
                         <label class="selector-marker">
                             <input type="radio" name="item-group" value="care-preparations" checked>
                             <span class="marker-indicator"></span>
-                        Средства для ухода
+                        Brewed
                         </label>
                         <label class="selector-marker">
                             <input type="radio" name="item-group" value="accessories">
                             <span class="marker-indicator"></span>
-                        Аксессуары
+                        Macchiatos
                         </label>
                     </fieldset>
                     <button class="btn-filter" type="button">Apply</button>
@@ -96,9 +89,9 @@
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <p class="catalog-item-image">
-                            <a href="#"><img class="item-image" src="https://fthmb.tqn.com/3b3BWeDUlAJNZAa8qQ7M5hRHzWw=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/glass-of-iced-coffee-89004347-5887f9ba3df78c2ccdd16180.jpg"></a>
+                            <a href="./single-item.html"><img class="item-image" src="https://fthmb.tqn.com/3b3BWeDUlAJNZAa8qQ7M5hRHzWw=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/glass-of-iced-coffee-89004347-5887f9ba3df78c2ccdd16180.jpg"></a>
                         </p>
-                        <a href="#"><h3>Iced Coffee with Milk</h3></a>
+                        <a href="./single-item.html"><h3>Iced Coffee with Milk</h3></a>
                         <div class="item-buy">
                             <span class="buy-price">$3.45</span>
                             <a class="btn" href="#">Buy</a>
@@ -169,6 +162,7 @@
                     <p id="signup-news">Sign up for the latest from Brooklyn coffee shop</p>
                     <input class="email-news" type="email" placeholder="Enter your email..."
                     style="cursor: auto">
+                    <button type="submit" class="sign-btn">Sign Up</button>
                 </div>
                 <div class="footer-social">
                     <h2>Join Us</h2>
