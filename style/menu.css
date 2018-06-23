@@ -1,0 +1,405 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    min-width: 1122px;
+    min-height: 1350px;
+}
+
+.main-header{
+    color: #000000;
+        margin-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    min-height: 285px;
+    background-color: transparent;
+}
+
+/* navbar is the right size now  */
+.inner-page .main-navigation{
+    align-items: flex-start; 
+    flex-direction: row;
+}
+
+.main-navigation .container {
+    display: flex;
+}
+
+.main-navigation-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: #000000;
+}
+
+.main-navigation-wrapper .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.site-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-navigation{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 140px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* logout will be on the right side */
+.inner-page .user-navigation{
+    margin: auto;
+}
+
+/* block - to make paddings work */
+.site-navigation a,
+.user-navigation a{
+    display: block; 
+    padding: 25px 20px;
+    color: #ffffff;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
+    background-color: #242424;
+}
+
+.features{
+    margin-bottom: 80px;
+    margin-top: 120px;
+}
+
+.feature-list{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+.feature-item{
+    width: 300px;
+    text-align: center;    
+}
+.feature-item h3{
+    position: relative;
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 30px;
+    line-height: 42px; 
+}
+
+.feature-item h3::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: -10px;
+    background: #ffffff;
+    transform: rotate(45deg);
+}
+
+.feature-item p{
+    margin: 0 10px;
+}
+
+.index-columns{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+    padding: 50px 80px;
+    color: #000000;
+    background-color: #f8f5f2;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.index-columns h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+#main-page-img{
+   width: 260px;
+   height: 235px;
+}
+
+.index-columns h2{
+    margin: 0;
+    margin-bottom:  25px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news{
+    width: 380px;
+}
+
+.news-list{
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.news-item{
+    margin-bottom: 25px;
+}
+
+.news-item p{
+    margin:0;
+}
+
+.news-item time{
+    text-transform: none;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #000000;
+    border: none;
+}
+
+.button a{
+    color: #ffffff;
+}
+
+.button:hover,
+.button:focus,
+.button:active{
+    background-color: #662d15;
+}
+
+.gallery{
+    width: 300px;
+}
+
+.gallery-container{
+    position: relative;
+    height: 260px;
+}
+
+.gallery content{
+    height: 164px;
+    margin: 0;
+    background-color: #cccccc;
+    border: 2px solid #ffffff;
+}
+
+
+.main-footer{
+    margin-top: 65px;
+    padding: 60px 0;
+    color: #ffffff;
+    background-color: #222222;
+}
+
+.inner-page .main-footer{
+    margin-top: 45px;
+}
+.main-footer .container{
+    display: flex;
+    margin: 0 40px;
+}
+
+.main-footer #signup-news{
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+}
+
+.main-footer .container .email-news{
+    height: 28px;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.footer-social{
+    width: 145px;
+    /* margin: 0;
+    margin-left: auto; */
+    text-align: center;
+}
+
+.footer-social h2{
+    margin-bottom: 15px;
+}
+.footer-social ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.social-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: #000000
+}
+
+.social-button:hover,
+.social-button:focus{
+    background-color: #494848;
+}
+
+.social-button:hover path,
+.social-button:focus path{
+    fill: #000000;
+}
+
+.footer-content{
+    display: flex;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 10px;
+    color: #ffffff;
+}
+.footer-content ul {
+    list-style: none;
+}
+.footer-content ul a{
+    color: white;
+}
+
+.filters{
+    width: 180px;
+}
+
+.catalog-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog{
+    width: 700px;
+}
+
+.catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-item{
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: #f8f8f8;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.catalog-item:hover{
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a{
+    color: #000000;
+}
+
+.catalog-item h3{
+    text-transform: none;
+}
+
+.catalog-item-price{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.item-image{
+    width: 220px;
+    height: 235px;
+}
+.catalog-item-price button{
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.navigation-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-list a{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.navigation-item-current{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus,
+.navigation-list a:active{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+.navigation-list:hover,
+.navigation-list:focus,
+.navigation-list:active{
+    background-color: #662d15;
+}
